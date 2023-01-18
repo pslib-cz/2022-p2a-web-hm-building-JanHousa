@@ -1,12 +1,13 @@
 .header{
-    background-image: url(../media/pageheader-1920w.jpg);
-
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url(../media/pageheader-1920w.jpg);
     background-size: cover;
 
     
 }
 
-@media (min-width: 850px) {
+@media (min-width: 20px) {
     .header{
         height: 40vh;
     }
@@ -17,3 +18,4 @@
         height: 95vh;
     }
 }
+
