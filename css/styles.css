@@ -1,0 +1,19 @@
+.header{
+    background-image: url(../media/pageheader-1920w.jpg);
+
+    background-size: cover;
+
+    
+}
+
+@media (min-width: 850px) {
+    .header{
+        height: 40vh;
+    }
+}
+
+@media (min-width: 1400px) {
+    .header{
+        height: 95vh;
+    }
+}
