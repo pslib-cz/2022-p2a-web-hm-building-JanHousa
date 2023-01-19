@@ -60,3 +60,18 @@
   .button:hover{
     background-color: #bd5500;
   }
+
+  @media (max-width: 1400px) {
+    .header{
+        height: 95vh;
+    }
+}
+
+@media (max-width: 750px) {
+    .button{
+        width: 250/2px;
+        height: 65/2px;
+    }
+}
+
+
