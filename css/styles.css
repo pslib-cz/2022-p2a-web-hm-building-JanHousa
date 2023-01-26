@@ -1,8 +1,16 @@
+html, body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .header{
     background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
     url(../media/pageheader-1920w.jpg);
     background-size: cover;
+    position: relative;
 
 }
 
@@ -103,9 +111,19 @@
 }
 
 
-.services{
-    margin: 0 1.5em;
+.servises_cell{
+    margin-top: 2em;
+    text-align: center;
+    max-width: 800px;
+    align-self: center;
+    display: block;
 }
+
+.servises_cell h1{
+    font-size: 3em;
+}
+
+
 
 .img_homepage{
     width: 100%;    
@@ -119,4 +137,37 @@
 
 .orange_font{
     color:#df6400;
+}
+
+
+.services-container{
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.column-left img{
+    border-bottom-right-radius: 3em;
+}
+
+.column-right img{
+    border-bottom-left-radius: 3em;
+}
+
+
+.services{
+    
+}
+
+
+.footer{
+
+    background-color: #df6400;
+    text-align: center;
+    padding: 2em 1em;
+    color: white;
+
 }
