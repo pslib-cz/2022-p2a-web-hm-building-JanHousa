@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css/normalize.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/col.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class=""><img src="./media/logo.png" alt="logo" width="60px"></a>
+        <a href="./index.html" class="active" id="menu">DOMŮ</a>
+        <a href="#news" id="menu">SLUŽBY</a>
+        <a href="#contact" id="menu">REFERENCE</a>
+        <a href="#about" id="menu">O NÁS</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+
+    <header class="reference__header">
+    </header>
+
+
+        <h1>REFERENCE TEXT TEXT TEXT...</h1>
+
+    <footer class="footer">
+        <h1 class>Plácneme si pro Váš projekt?</h1>
+        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+     
+    </footer>
+</body>
