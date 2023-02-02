@@ -19,6 +19,14 @@ html, body{
     align-items: center;
 }
 
+.box{
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    text-align: center;
+    size: 80%;
+}
+
 .reference__header{
     background: linear-gradient(0deg, rgba(49, 49, 49, 0.5), rgba(53, 52, 52, 0.5)),
                 url(../media/pageheader-1920w.jpg);
