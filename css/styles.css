@@ -102,7 +102,13 @@ html, body{
     font-style: bold;
     font-weight: 600;
     padding-right: 1em;
+    
 }
+
+.jumbotron-content{
+    margin-left: 5em ;
+}
+
 
 .jumbotron__button {
     background-color: #df6400;
@@ -118,6 +124,7 @@ html, body{
     font-weight: bold;
     margin: 4px 2px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 @media (min-width: 801px) {
@@ -199,8 +206,57 @@ html, body{
 }
 
 
+.body__references {
+    padding: 0 1em;
+}
 
+.reference-heading {
+    text-align: center;
+    padding-top: .5em;
+    font-size: 1.3em;
+}
 
+.reference-text {
+    padding-top: 0;
+    text-align: center;
+    font-size: .8em;
+}
+
+@media (min-width: 600px) {
+    .body > main, .body__references {
+        width: 85vw;
+        margin: 0 auto;
+    }
+    .references {
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+    }
+    .reference-heading {
+        font-size: 1em;
+    }
+    .reference-text {
+        font-size: .7em;
+    }
+    .references__header {
+        text-align: center;
+        padding: 0 5em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .references__header {
+        text-align: center;
+        padding: 0 10em;
+    }
+}
+
+@media (min-width: 1600px) {
+    .references__header {
+        text-align: center;
+        padding: 0 15em;
+    }
+}
 
 .column-left img{
     border-bottom-right-radius: 3em;
@@ -248,6 +304,24 @@ html, body{
     object-fit: cover;
     padding-top: 2.5em;
 }
+
+.about {
+    padding: 3em 1em;
+}
+
+.about-ul {
+    padding: 1em 2em;
+}
+
+.about-ul li {
+    padding: .2em 0;
+}
+
+ul li::marker {
+    color: #df6400;
+}
+
+
 
 @media (min-width: 800px) {
     .services__content {
