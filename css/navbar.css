@@ -239,5 +239,5 @@
 
 #active {
   background-color: var(--main);
-  color: white;
+  color: white !important;
 }

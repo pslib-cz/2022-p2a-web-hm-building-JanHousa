@@ -22,7 +22,7 @@
 
             <menu class="navigation">
                 <ul class="menu">
-                    <li id="active"><a href="./index.html">Domů</a></li>
+                    <li id="active"><a id="active" href="./index.html">Domů</a></li>
                     <li><a href="#services">Služby</a></li>
                     <li><a href="./reference.html">Reference</a></li>
                     <li><a href="./onas.html">O nás</a></li>
@@ -55,8 +55,8 @@
             </picture>
             <figcaption class="grid-right">
                 <h2 class="services__titles">Novostavby</h2>
-                <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu n
-                    a klíč</strong>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.
+                <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu na klíč</strong>, 
+                    případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.
                 Provádíme stavby jak průmyslového typu, tak rodinné stavby.</p>
                 <p class="service__button"><a class="services__button" href="">Zobrazit více</a></p>
             </figcaption>
@@ -100,12 +100,12 @@
         <div class="jumbotron-content">
             <p class="jumbotron-text">Naše firma nabízí své služby ve stavebnictví od roku 2015.</p>
             <p class="jumbotron-text">Za kvalitu naší práce ručíme.</p>
-            <p class="jumbotron__button"><a href="">Přesvědčit se</a></p>
+            <p><a class="jumbotron__button" href="">Přesvědčit se</a></p>
         </div>
     </section>
 
     <header class="references__header">
-        <h1>Rádi vám ukážeme naše <span class="orange_font">reference</span></h1>
+        <p class="references__title">Rádi vám ukážeme naše <span class="orange_font">reference</span></p>
         <p>Stojí za námi <strong>kvalitně vyhotovené zakázky</strong> 
             dle konkrétních požadavků zadavatelů <strong>podepřené letitými zkušenostmi ve stavebnictví</strong>.
             To, že <strong>obrátit se na právě nás je vhodná volba potvrdí naši klienti</strong>, 
@@ -116,42 +116,41 @@
     <div class="references">
         <figure class="references__box">
 
-            <picture class="img-ref">
-                <a href="./reference.html"><img class="media" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt=""></a>
-            </picture>
-            <div>
+            <picture class="img-references">
+                <a href="./reference.html"><img class="references__media" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt=""></a>
+            <div class="references-overlay">
                 <h2 class="heading reference-heading">Hasičská zbrojnice</h2>
                 <p class="reference-text">celková rekonstrukce</p>
             </div>
+        </picture>
         </figure>
         <figure class="references__box">
 
-            <picture class="img-ref">
-                <a href="./reference.html"><img class="media" src="./media/reference/reference-pradelna-600w.jpg" alt=""></a>
-            </picture>
-            <div>
+            <picture class="img-references">
+                <a href="./reference.html"><img class="references__media" src="./media/reference/reference-pradelna-600w.jpg" alt=""></a>        
+            <div class="references-overlay">
                 <h2 class="heading reference-heading">Samoobslužná prádelna</h2>
                 <p class="reference-text">stavební úpravy a opravy</p> 
             </div>
+        </picture>
         </figure>
         <figure class="references__box">
-
-            <picture class="img-ref">
-                <a href="./reference.html"><img class="media" src="./media/reference/reference-plocha-600w.jpg" alt=""></a>
-            </picture>
-            <div>
+            <picture class="img-references">
+                <a href="./reference.html"><img class="references__media" src="./media/reference/reference-plocha-600w.jpg" alt=""></a>
+            <div class="references-overlay">
                 <h2 class="heading reference-heading">Venkovní plochy Restyl</h2>
                 <p class="reference-text">provedení venkovních ploch</p>
             </div>
+            </picture>
         </figure>
     </div>
 
 
 
       <footer class="footer">
-          <h1 class>Plácneme si pro Váš projekt?</h1>
-          <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-       
+          <p class="footer__title">Plácneme si pro Váš projekt?</p>
+          <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+          <p class="footer-button"><a href="./Pages/reference.html" class="btn-footer">Nezávazně poptat</a></p>
       </footer>
 
     

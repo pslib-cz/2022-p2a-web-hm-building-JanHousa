@@ -86,6 +86,133 @@ html, body{
         font-weight: bold;
         font-size: 1.5em;
     }
+    .services__titles{
+        margin-bottom: 10px;
+    }
+    .services p{
+        margin-bottom: 10px;
+    }
+    .services__button{
+        width: 80px;
+        height: 18px;
+        padding: 10px 30px;
+        color: var(--main);
+        border: dashed;
+        border-width: 2px;
+        background-color: var(--white);
+        text-decoration: none;
+        
+    }
+    .services__button:hover{
+        width: 80px;
+        height: 20px;
+        padding: 12px 30px;
+        color: var(--white);
+        border: none;
+        background-color: var(--main);
+        text-decoration: none;
+        
+    }
+    .service__button{
+        margin-top: 15px;
+    }
+    
+    .jumbotron {
+        background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%),
+        url(../media/background-CTAblock-4460w.jpg);
+        background-repeat: no-repeat;
+        height: 25vh;
+        background-size:  cover;
+        background-position: center;
+        padding: 0 1em;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .jumbotron-text {
+        color: var(--white);
+        font-size: 1em;
+        font-weight: 600;
+        padding: 2px;
+    }
+    .jumbotron-content{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+    .jumbotron__button {
+        background-color: var(--main);
+        width: 140px;
+        height: 20px;
+        border: none;
+        color: var(--white);
+        padding: 16px 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 4px 2px;
+        margin-top: 40px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .references__header{
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 2em 1em;
+    }
+    .references__title{
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .references{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+        padding: 2em 1em;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 1.2em;
+        display: grid;
+    }
+    .references__box{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .references img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .img-references{
+        width: 100%;
+    }
+    .refereces__media{
+        margin-top: 3em;
+        width: 100%;
+        object-fit: cover;
+    }
+    .footer{
+        background-color: var(--main);
+        text-align: center;
+        padding: 3em 1em;
+        color: var(--white);
+        font-family: 'Montserrat', sans-serif;
+    }
+    .footer__title{
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .footer__text{
+        margin-top: 1em;
+    }
 
 }
 
@@ -136,6 +263,31 @@ html, body{
     .services__content h2{
         margin-bottom: 10px;
     }
+    .jumbotron-text {
+        font-size: 1.4em;
+    }
+    .jumbotron-content{
+        margin-top: 40px;
+    }
+    .jumbotron__button {
+        margin-top: 30px;
+    }
+    .references__title{
+        font-size: 2em;
+    }
+    .references__header{
+        font-size: 1.2em;
+    }
+    .references{
+        font-size: 1.5em;
+    }
+    .footer__title{
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .footer__text{
+        margin-top: 1.4em;
+    }
 
 }
 
@@ -185,6 +337,28 @@ html, body{
         margin-bottom: 10px;
         font-size: 1.5em;
     }
+    .jumbotron {
+        height: 40vh;
+    }
+
+    .jumbotron-text {
+        color: var(--white);
+        font-size: 2em;
+        font-weight: 600;
+    }
+    .references__header{
+        text-align: center;
+    }
+    .references__title{
+        font-size: 3em;
+    }
+    .references{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
 
 }
 
@@ -215,7 +389,16 @@ html, body{
         margin-left: 5%;
         margin-right: 5%;
     }
-
+    .footer{
+        padding: 4em 1em;
+    }
+    .footer__title{
+        font-size: 3em;
+        font-weight: 700;
+    }
+    .footer__text{
+        font-size: 1.5em;
+    }
 }
 
 @media (min-width: 1700px) {  
@@ -223,16 +406,18 @@ html, body{
         margin-left: 10%;
         margin-right: 10%;
     }
-
+    .jumbotron-content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
-.box{
-    margin-left: 10%;
-    margin-right: 10%;
-    justify-content: center;
-    text-align: center;
-    size: 80%;
-}
+
+
+
+
+
+
 
 .reference__header{
     background: linear-gradient(0deg, rgba(49, 49, 49, 0.5), rgba(53, 52, 52, 0.5)),
@@ -262,21 +447,6 @@ html, body{
 }
 
 
-.jumbotron {
-    background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%),
-    url(../media/background-CTAblock-4460w.jpg);
-    background-repeat: no-repeat;
-    height: 30vh;
-    background-size:  cover;
-    background-position: center;
-    padding: 0 1em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
 
 
 
@@ -296,36 +466,7 @@ a.btn::after{
     border: 1px dashed var(--main);
 }
 
-.jumbotron-text {
-    color: var(--white);
-    font-size: 1.2em;
-    font-style: bold;
-    font-weight: 600;
-    padding-right: 1em;
-    
-}
 
-.jumbotron-content{
-    margin-left: 5em ;
-}
-
-
-.jumbotron__button {
-    background-color: var(--main);
-    width: 100px;
-    height: 30px;
-    border: none;
-    color: var(--white);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 4px 2px;
-    cursor: pointer;
-    text-decoration: none;
-}
 
 
 
@@ -378,41 +519,9 @@ a.btn::after{
     font-size: .8em;
 }
 
-@media (min-width: 600px) {
-    .body > main, .body__references {
-        width: 85vw;
-        margin: 0 auto;
-    }
-    .references {
-        display: flex;
-        gap: 1em;
-        justify-content: center;
-    }
-    .reference-heading {
-        font-size: 1em;
-    }
-    .reference-text {
-        font-size: .7em;
-    }
-    .references__header {
-        text-align: center;
-        padding: 0 5em;
-    }
-}
 
-@media (min-width: 1200px) {
-    .references__header {
-        text-align: center;
-        padding: 0 10em;
-    }
-}
 
-@media (min-width: 1600px) {
-    .references__header {
-        text-align: center;
-        padding: 0 15em;
-    }
-}
+
 
 .column-left img{
     border-bottom-right-radius: 3em;
@@ -474,14 +583,22 @@ ul li::marker {
 
 
 
-.footer{
 
-    background-color: var(--main);
-    text-align: center;
-    padding: 2em 1em;
-    color: var(--white);
 
+.btn-footer{
+    width: 80px;
+    height: 18px;
+    padding: 20px 30px;
+    font-size: 20px;
+    color: var(--main);
+    background-color: var(--white);
+    text-decoration: none;
+    font-weight: 700;
+    
 }
 
+.footer-button{
+    margin-top: 5em;
+}
 
 
