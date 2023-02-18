@@ -9,42 +9,40 @@
     <link rel="stylesheet" href="css/col.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>HM Building</title>
+    <link rel="icon" type="image/x-icon" href="./media/icon/icon.ico"> <!--Za ikonku žádám plusové body-->
 </head>
 <body>
 
-    <div class="topnav" id="myTopnav">
-      <a href="#home" class=""><img src="./media/logo.png" alt="logo" width="60px"></a>
-        <a href="#home" class="active" id="menu">DOMŮ</a>
-        <a href="#services" id="menu">SLUŽBY</a>
-        <a href="./reference.html" id="menu">REFERENCE</a>
-        <a href="./onas.html" id="menu">O NÁS</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+    <nav class="navbar">
+            
+            <a href="./index.html" class="navbar-logo"><img class="img-logo" src="./media/logo.png" alt="logo"></a>
+            <input class="navbar-dropdown" type="checkbox" id="navbar-dropdown"/>
+            <label class="navbar__hamburger" for="navbar-dropdown"><span class="navbar__hamburger-line"></span></label>
+
+            <menu class="navigation">
+                <ul class="menu">
+                    <li id="active"><a href="./index.html">Domů</a></li>
+                    <li><a href="#services">Služby</a></li>
+                    <li><a href="./reference.html">Reference</a></li>
+                    <li><a href="./onas.html">O nás</a></li>
+                    <li><a href="./kontakty.html">Kontakt</a></li>
+                </ul>
+            </menu>
+
+        </nav>
 
     <header class="header">
-        <h1 class="header-info">HM Building.cz s.r.o</h1>
-        <h2 class="header-info_second">liberecká stavební společnost</h2>
-        <button class="button">pokračovat</button>
+        <h1 class="header-main">HM Building.cz s.r.o.<br><span class="header-second">liberecká stavební společnost</span></h1>
+        <p class="header__btn"><a href="#services" class="btn">pokračovat</a></p>
     </header>
+
 
 
     <main class="services" id="services">
 
         <div class="services__header">
-            <h2 class="">Využijte škálu našich <span class="orange_font">služeb</span></h2>
+            <p class="services__title">Využijte škálu našich <span class="orange_font">služeb</span></p>
             <p>Ačkoliv provádíme především <strong>půmyslové stavby</strong>,
                  není pro nás problém postavit
                 Vám <strong>rodinný domek na klíč</strong>, nebo jen hrubou stavbu. Nejsou nám cizí 
@@ -53,9 +51,9 @@
 
         <div class="services__content">
             <picture class="service-picture right-cor">
-                <img class="img-rsp" src="./media/sluzba-novostavby-1200w.jpg" alt="">
+                <img class="media" src="./media/sluzba-novostavby-1200w.jpg" alt="">
             </picture>
-            <figcaption class="fig-right">
+            <figcaption class="grid-right">
                 <h2 class="services__titles">Novostavby</h2>
                 <p>Dle požadavků investora jsme schopní dodat <strong>kompletní stavbu n
                     a klíč</strong>, případně zhotovit ucelenou část. Jsme schopni zajistit také projektovou dokumentaci.
@@ -63,10 +61,10 @@
                 <p class="service__button"><a class="services__button" href="">Zobrazit více</a></p>
             </figcaption>
 
-            <picture class="service-picture left-cor">
-                <img class="img-rsp" src="./media/sluzba-prumyslove-stavby-1920w.jpg" alt="">
+            <picture class="service-picture column">
+                <img class="media" src="./media/sluzba-prumyslove-stavby-1920w.jpg" alt="">
             </picture>
-            <figcaption class="fig-left">
+            <figcaption class="grid-left">
                 <h2 class="services__titles">Průmyslové stavby</h2>
                 <p>Realizujeme <strong>půmyslové objekty ocelové konstrukce</strong>, lehké ocelové (stanového typu), z prefabrikovaných dílců atd.
                 Vzhledem k tomu, že vlastníme dostatek vlastní mechanizace, stáváme se nezávislými na osta
@@ -75,9 +73,9 @@
             </figcaption>
 
             <picture class="service-picture right-cor">
-                <img class="img-rsp" src="./media/sluzba-rekonstrukce-1920w.jpg" alt="">
+                <img class="media" src="./media/sluzba-rekonstrukce-1920w.jpg" alt="">
             </picture>
-            <figcaption class="fig-right">
+            <figcaption class="grid-right">
                 <h2 class="services__titles">Rekonstrukce domů a jiných staveb</h2>
                 <p>Provádíme veškeré práce spojené s <strong>rekonstrukcí stávajících objektů</strong>.
                      Pro naše klienty zajišťujeme dodatečné izolování objektů,
@@ -85,10 +83,10 @@
                 <p class="service__button"><a class="services__button" href="">Zobrazit více</a></p>
             </figcaption>
 
-            <picture class="service-picture left-cor">
-                <img class="img-rsp" src="./media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="">
+            <picture class="service-picture column">
+                <img class="media" src="./media/sluzba-komunikace-a-zpevnene-plochy-1200w.jpg" alt="">
             </picture>
-            <figcaption class="fig-left">
+            <figcaption class="grid-left">
                 <h2 class="services__titles">Komunikace a zpevněné plochy</h2>
                 <p>Komunikace a zpevněné plochy provádíme včetně <strong>zemních prací,
                      konstrukcí podkladních</strong> a souvisejících objektů,
@@ -119,7 +117,7 @@
         <figure class="references__box">
 
             <picture class="img-ref">
-                <a href="./reference.html"><img class="img-rsp" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt=""></a>
+                <a href="./reference.html"><img class="media" src="./media/reference/reference-hasicska-zbrojnice-600w.jpg" alt=""></a>
             </picture>
             <div>
                 <h2 class="heading reference-heading">Hasičská zbrojnice</h2>
@@ -129,7 +127,7 @@
         <figure class="references__box">
 
             <picture class="img-ref">
-                <a href="./reference.html"><img class="img-rsp" src="./media/reference/reference-pradelna-600w.jpg" alt=""></a>
+                <a href="./reference.html"><img class="media" src="./media/reference/reference-pradelna-600w.jpg" alt=""></a>
             </picture>
             <div>
                 <h2 class="heading reference-heading">Samoobslužná prádelna</h2>
@@ -139,7 +137,7 @@
         <figure class="references__box">
 
             <picture class="img-ref">
-                <a href="./reference.html"><img class="img-rsp" src="./media/reference/reference-plocha-600w.jpg" alt=""></a>
+                <a href="./reference.html"><img class="media" src="./media/reference/reference-plocha-600w.jpg" alt=""></a>
             </picture>
             <div>
                 <h2 class="heading reference-heading">Venkovní plochy Restyl</h2>
