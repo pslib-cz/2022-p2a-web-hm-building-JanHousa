@@ -19,7 +19,7 @@
 .navigation {
     height: auto;
     position: absolute;
-    background-color: #EB6C27;
+    background-color: var(--main);
     overflow: hidden;
     width: 90%;
     left: 50%;

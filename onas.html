@@ -9,36 +9,34 @@
     <link rel="stylesheet" href="css/col.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>HM Building</title>
+    <link rel="icon" type="image/x-icon" href="./media/icon/icon.ico"> <!--Za ikonku žádám plusové body-->
 </head>
 <body>
 
-    <div class="topnav" id="myTopnav">
-      <a href="#home" class=""><img src="./media/logo.png" alt="logo" width="60px"></a>
-        <a href="./index.html" id="menu">DOMŮ</a>
-        <a href="./index.html" id="menu">SLUŽBY</a>
-        <a href="./reference.html"  id="menu">REFERENCE</a>
-        <a href="" class="active" id="menu">O NÁS</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </div>
-      <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-      </script>
+    <nav class="navbar">
+            
+            <a href="./index.html" class="navbar-logo"><img class="img-logo" src="./media/logo.png" alt="logo"></a>
+            <input class="navbar-dropdown" type="checkbox" id="navbar-dropdown"/>
+            <label class="navbar__hamburger" for="navbar-dropdown"><span class="navbar__hamburger-line"></span></label>
+
+            <menu class="navigation">
+                <ul class="menu">
+                    <li><a href="./index.html">Domů</a></li>
+                    <li><a href="./index.html #services">Služby</a></li>
+                    <li><a href="./reference.html">Reference</a></li>
+                    <li id="active"><a id="active" href="./onas.html">O nás</a></li>
+                    <li><a href="./kontakty.html">Kontakt</a></li>
+                </ul>
+            </menu>
+
+        </nav>
 
 <header class="reference__header">
 </header>
 
 <article class="about">
-    <h1 class="about-h1">O nás</h1>
+    <h1 class="about-h1">Co dělá společnost HM Building?</h1>
     <p class="about-cont">
         Společnost <strong>HM Building.cz s.r.o.</strong> nabízí své <strong>
             služby ve stavebnictví od roku 2015</strong>, a to převážně <strong>po Libereckém kraji</strong>.
@@ -65,9 +63,10 @@
     </p>
 </article>
 
-    <footer class="footer">
-        <h1 class>Plácneme si pro Váš projekt?</h1>
-        <p>Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
-     
-    </footer>
+  <footer class="footer">
+    <p class="footer__title">Plácneme si pro Váš projekt?</p>
+    <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+    <p class="footer-button"><a href="./Pages/reference.html" class="btn-footer">Nezávazně poptat</a></p>
+  </footer>
+
 </body>

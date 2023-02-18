@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css/normalize.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/col.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/2305f2c34d.js" crossorigin="anonymous"></script>
+    <title>HM Building</title>
+    <link rel="icon" type="image/x-icon" href="./media/icon/icon.ico"> <!--Za ikonku žádám plusové body-->
+</head>
+<body>
+
+    <nav class="navbar">
+            
+        <a href="./index.html" class="navbar-logo"><img class="img-logo" src="./media/logo.png" alt="logo"></a>
+        <input class="navbar-dropdown" type="checkbox" id="navbar-dropdown"/>
+        <label class="navbar__hamburger" for="navbar-dropdown"><span class="navbar__hamburger-line"></span></label>
+
+        <menu class="navigation">
+            <ul class="menu">
+                <li><a href="./index.html">Domů</a></li>
+                <li><a href="./index.html #services">Služby</a></li>
+                <li><a href="./reference.html">Reference</a></li>
+                <li><a href="./onas.html">O nás</a></li>
+                <li id="active"><a id="active" href="./kontakty.html">Kontakt</a></li>
+            </ul>
+        </menu>
+
+    </nav>
+
+    <header class="reference__header">
+    </header>
+
+    <div class="contact">
+
+        <p class="contact__title">Kontaktujte nás</p>
+        <p class="contact__text">Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+        <div class="contact__">
+            <div class="contacts">
+                <p class="contact__method contact-phone"><a href="tel:+420775550564">+420 775 550 564</a></p>
+                <p class="contact__method contact-email"><a href="mailto:stavby@hm-building.cz">stavby@hm-building.cz</a></p>    
+                <p class="contact__method contact-adress"><a target="_blank" href="https://mapy.cz/zakladni?q=K%C5%99i%C5%BEansk%C3%A1%2012%2C%20Liberec%20XXII-Horn%C3%AD%20Such%C3%A1&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17">Křižanská 12, Liberec XXII-Horní Suchá</a></p>
+            </div>
+            <a class="contact__link" target="_blank" href="https://mapy.cz/zakladni?q=K%C5%99i%C5%BEansk%C3%A1%2012%2C%20Liberec%20XXII-Horn%C3%AD%20Such%C3%A1&source=addr&id=9085775&ds=1&x=15.0022034&y=50.7607286&z=17">
+                <img class="contact__map" src="./media/mapa.jpg" alt="">
+            </a>
+            <div class="contact__form">
+
+                <h3 class="form__title">Nezávazná poptávka služeb</h3>
+                <p class="form__desc">Plácneme se pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+
+                <label class="form__label" for="name">Jméno a příjmení</label>
+                <input required="required" class="form__input" type="text" id="name">
+                <label class="form__label" for="email">E-mail</label>
+                <input required="required" class="form__input" type="email" id="email">
+                <label class="form__label" for="telefon">Telefon</label>
+                <input class="form__input" type="text" id="telefon">
+                <label class="form__label" for="sluzba">Poptávaná služba</label>
+
+                <select class="form__selection" name="sluzba" id="sluzba">
+                    <option class="fort__option" value="novostavba">Novostavba</option>
+                    <option class="fort__option" value="prumstavba">Průmyslová stavba</option>
+                    <option class="fort__option" value="rekonstrukce">Rekonstrukce domů a jiných staveb</option>
+                    <option class="fort__option" value="kominukace">Komunikace a zpevněné plochy</option>
+                </select>
+
+                <label class="form__label" for="poznamka">Poznámka</label>
+                <textarea style="resize: none;" class="form__textarea" rows="10" id="poznamka"></textarea>
+                <a class="btn" href="#">Odeslat nezávaznou poptávku</a>
+
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="footer__title">Plácneme si pro Váš projekt?</p>
+            <p class="footer__text">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
+            <p class="footer-button"><a href="./Pages/reference.html" class="btn-footer">Nezávazně poptat</a></p>
+        </footer>
+</body>
+</html>
