@@ -510,6 +510,32 @@ html, body{
         margin-left: 10%;
         margin-right: 10%;
     }
+    .references-overlay{
+        display: flex;
+        visibility: hidden;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        color: var(--white);
+        background: var(--main);
+        text-align: center;
+        justify-content: center;
+        gap: 0.25em;
+        pointer-events: none;
+        z-index: 999;
+        flex-direction: column;
+    }
+    .references__box{
+        position: relative;
+    }
+    .references a{
+        display: inline-block;
+    }
+    .references__box:hover .references-overlay {
+        visibility: visible;
+        background: rgba(223, 100, 0, 0.9);
+    }
     .about-h1{
         font-size: 2.8em;
     }
