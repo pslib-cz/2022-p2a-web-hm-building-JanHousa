@@ -114,12 +114,14 @@
 @media (min-width: 300px) {
   .navigation{
     margin-top: 20px;
+    z-index: 999;
   }
   .menu a {
     text-transform: uppercase;
     color: var(--white);
     padding: 20px;
     font-family: 'Francois One', sans-serif;
+    z-index: 999;
   }
 }
 
@@ -132,6 +134,7 @@
     display: none;
 }
 .navbar {
+  z-index: 999;
     position: absolute;
     top: 30px;
     background-color:white;
@@ -153,6 +156,7 @@
 }
 
 .menu {
+  z-index: 999;
     display: flex;
     justify-content: flex-end;
     width: fit-content;
