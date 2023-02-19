@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&family=Montserrat:wght@400;800&display=swap');
 
 :root{
     --main: #df6400;
@@ -7,6 +8,9 @@
     --darkmain: #ac4f02;
 }
 
+html{
+    font-family: 'Montserrat', sans-serif;
+}
 
 html, body{
     margin: 0;
@@ -92,10 +96,10 @@ html, body{
         font-size: 1.5em;
     }
     .services__titles{
-        margin-bottom: 10px;
+        margin-bottom: 0.625em;
     }
     .services p{
-        margin-bottom: 10px;
+        margin-bottom: 0.625em;
     }
     .services__button{
         width: 80px;
@@ -119,7 +123,7 @@ html, body{
         
     }
     .service__button{
-        margin-top: 2em;
+        margin-top: 0.9375em;
     }
     
     .jumbotron {
@@ -145,7 +149,7 @@ html, body{
     .jumbotron-content{
         margin-left: 5%;
         margin-right: 5%;
-        margin-top: 0.66em;
+        margin-top: 0.625em;
     }
     .jumbotron__button {
         background-color: var(--main);
@@ -153,14 +157,14 @@ html, body{
         height: 20px;
         border: none;
         color: var(--white);
-        padding: 1.066em 2em;
+        padding: 1em 1.875em;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 0.933em;
+        font-size: 0.875em;
         font-weight: bold;
-        margin: 0.26em 0.13em;
-        margin-top: 2.6664em;
+        margin: 0.25em 0.125em;
+        margin-top: 2.5em;
         cursor: pointer;
         text-decoration: none;
     }
@@ -174,7 +178,7 @@ html, body{
     .references__title{
         font-size: 1.5em;
         font-weight: 700;
-        margin-bottom: 0.66em;
+        margin-bottom: 0.625em;
     }
     .references{
         display: flex;
@@ -265,7 +269,7 @@ html, body{
         display: flex;
         position: absolute;
         left: 0;
-        top: -0.66em;
+        top: -0.625em;
         align-items: center;
         justify-content: center;
         background-color: var(--main);
@@ -302,7 +306,7 @@ html, body{
         height: 30px;
         border: none;
         color: var(--white);
-        padding: 2em 0;
+        padding: 1.875em 0em;
         text-align: center;
         text-decoration: none;
         display: inline-block;
@@ -369,7 +373,7 @@ html, body{
         display: inline-block;
         font-size: 1.125em;
         font-weight: bold;
-        margin: 40px 2px;
+        margin: 2.5em 0.125em;
         cursor: pointer;
       }
       .services{
@@ -563,11 +567,11 @@ html, body{
         height: 20px;
         border: none;
         color: var(--white);
-        padding: 1.25em 0px;
+        padding: 1.25em 0em;
         text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 1em;
+        font-size: 16em;
         font-weight: bold;
         margin-bottom: 2em;
         cursor: pointer;
@@ -700,20 +704,39 @@ html, body{
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 1.25em;
-    right: 1.875em;
+    bottom: 20px;
+    right: 30px;
     z-index: 99;
-    font-size: 1.125em;
+    font-size: 18px;
     border: none;
     outline: none;
     background-color: var(--main);
     color: white;
     cursor: pointer;
-    padding: 0.9375em;
+    padding: 15px;
     border-radius: 4px;
     box-shadow: 6px 6px 2px 1px rgb(0 0 0 / 20%);
     transition: top 0.3s;
 }
+
+
+
+
+@media (min-width: 300px){
+    .grid-right {
+        grid-column: 2;
+    }
+    .column {
+        grid-column: 2;
+    }
+    .grid-left {
+        grid-column: 1;
+    }
+}
+
+
+
+
 
 a.btn::after{
     margin-left: 10px;
@@ -722,19 +745,46 @@ a.btn::after{
 
   .services__btn {
     font-weight: 500;
-    padding: 0.625em 1.25em;
+    padding: 10px 20px;
     text-decoration: none;
     text-align: center;
     display: inline-block;
     color: var(--main);
-    font-size: 1em;
+    font-size: 16px;
     border: 1px dashed var(--main);
 }
+
+
+
 
 
   .button:hover{
     background-color: var(--main);
   }
+
+
+
+
+
+
+
+@media (max-width: 750px) {
+    .button{
+        width: 250/2px;
+        height: 65/2px;
+    }
+}
+
+
+.img_homepage{
+    width: 100%;    
+    height: 8.5em;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    margin-top: 2.5em;
+
+}
 
 .orange_font{
     color:var(--main);
@@ -755,6 +805,18 @@ a.btn::after{
     padding-top: 0;
     text-align: center;
     font-size: .8em;
+}
+
+
+
+
+
+.column-left img{
+    border-bottom-right-radius: 3em;
+}
+
+.column-right img{
+    border-bottom-left-radius: 3em;
 }
 
 
