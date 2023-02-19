@@ -833,7 +833,9 @@ a.btn::after{
     padding: .2em 0;
 }
 
-
+.references__titles{
+    font-weight: 700;
+}
 
 .ul-vol2{
     margin-left: 3em;
