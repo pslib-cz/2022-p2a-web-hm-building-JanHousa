@@ -96,7 +96,7 @@ html, body{
         width: 80px;
         height: 18px;
         padding: 10px 30px;
-        color: var(--main);
+        color: var(--darkmain);
         border: dashed;
         border-width: 2px;
         background-color: var(--white);

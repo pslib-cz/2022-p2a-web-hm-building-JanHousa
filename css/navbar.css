@@ -241,3 +241,7 @@
   background-color: var(--main);
   color: white !important;
 }
+#activeA {
+  background-color: var(--main);
+  color: white !important;
+}
