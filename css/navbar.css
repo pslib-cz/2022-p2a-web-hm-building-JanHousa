@@ -10,10 +10,10 @@
     display: inline-block;
     color: white;
     padding: 1.5em 0;
-    margin-left: 10px;
+    margin-left: 0.625em;
 }
 .img-logo {
-    height: 50px;
+    height: 3.125em;
     width: auto;
 }
 .navigation {
@@ -46,7 +46,7 @@
 .navbar__hamburger{
     cursor: pointer;
     float: right;
-    padding: 45px 20px;
+    padding: 2.8125em 1.25em;
 }
 .navbar__hamburger-line {
     background: linear-gradient(90deg, #EB6C27 0%, #FFBE9A 100%);
@@ -65,10 +65,10 @@
     width: 100%;
 }
 .navbar__hamburger-line::before{
-    top: 16px;
+    top: 1em;
 }
 .navbar__hamburger-line::after{
-    top: -16px;
+    top: -1em;
 }
 .navbar-dropdown {
     display: none;
@@ -113,13 +113,13 @@
 
 @media (min-width: 300px) {
   .navigation{
-    margin-top: 20px;
+    margin-top: 1.25em;
     z-index: 999;
   }
   .menu a {
     text-transform: uppercase;
     color: var(--white);
-    padding: 20px;
+    padding: 1.25em;
     font-family: 'Francois One', sans-serif;
     z-index: 999;
   }
@@ -136,7 +136,7 @@
 .navbar {
   z-index: 999;
     position: absolute;
-    top: 30px;
+    top: 1.875em;
     background-color:white;
     left: 50%;
     transform: translate(-50%);
