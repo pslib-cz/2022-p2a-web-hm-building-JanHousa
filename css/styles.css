@@ -144,11 +144,10 @@ html, body{
         margin-top: 10px;
     }
     .jumbotron__button {
-        background-color: var(--darkmain);
+        background-color: var(--main);
         width: 140px;
         height: 20px;
-        border: dashed;
-        border-width: 2px;
+        border: none;
         color: var(--white);
         padding: 16px 30px;
         text-align: center;
@@ -688,7 +687,7 @@ html, body{
 }
 
 .jumbotron__button:hover{
-    background-color: var(--main);
+    background-color: var(--darkmain);
 }
 
 .btn-footer:hover{
