@@ -20,7 +20,7 @@ html, body{
 
 .header{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(104, 104, 104, 0.4)),
-                url(../media/pageheader-1920w.jpg);
+                url(../media/pageheader-1920w.webp);
     background-repeat: no-repeat;
     height: 35vh;
     background-size:  cover;
